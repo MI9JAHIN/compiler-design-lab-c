@@ -18,7 +18,7 @@ for(int i=0; i<length; i++)
         /*printf("The comment was : ");
         for(i=i; i<length; i++)
         {
-            printf("%c",st[i]);
+            printf("%c",st[i]);//only print comment
             //printf("\n");
         }*/
         c=1;
@@ -33,9 +33,9 @@ for(int i=0; i<length; i++)
                 b=j+1;
                 //printf("Mullti-lind comment\n");
                 //printf("The comment was : ");
-                for(j=i; j<=b; j++) // */commnt closed korce j+1
+                for(j=i; j<=b; j++) // /* এর পর থেকে বা(j+1) থেকে আবার cheak করবে ।
                 {
-                    printf("%c", st[j]);
+                    printf("%c", st[j]);//only print comment
                 }
                 c=1;
                 break;
