@@ -5,18 +5,17 @@ The maximum element is 23, found at position 2.*/
 #include <stdio.h>
 int main() 
 {
-    int n, i,c, max; // Number of elements in the array
+    int n, i,c=0, max;
     printf("Enter the size of the array : ");
     scanf("%d", &n);
     printf("Array size :%d\n", n);
     int arr[n];
-    //int len=arr[n].length;
-    //printf("%d",len);
+    printf("Enter the elements of the array:");
     for(i=0; i<n; i++)
     {
         scanf("%d", &arr[i]);
     }
-    printf("Elements of the array : ");
+    printf("Array are : ");
     for(i=0; i<n; i++)
     {
         printf("%d ", arr[i]);
