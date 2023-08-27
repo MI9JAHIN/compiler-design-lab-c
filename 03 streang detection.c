@@ -16,9 +16,15 @@ int main()
         {
             for(j=i+1; j<len; j++)
             {
-                if((st[i]=='\'' && st[i+1]!='\\') || (st[i]=='"' && st[i+1]!='\''))
+                if((st[j]=='\'' && st[j-1]!='\\') || (st[j]=='"' && st[j-1]!='\''))
                 {
-                    printf("Stirng found : %c",st[i]);
+                    printf("Stirng found : ");
+                    for (int k = i; k <= j; k++)
+                    {
+                        printf("%c", st[k]);
+                        //i=a;
+                    }
+                    //printf("%d",a);
                     c++;
                     break;
                 }
